@@ -1,8 +1,28 @@
 aid: get-satisfaction
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/get-satisfaction.png
 name: Get Satisfaction
-description: Get Satisfaction is a company surfaced as a portfolio company of uncork-capital and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Get Satisfaction was a customer-community and engagement SaaS platform that gave companies
+  a hosted online community where customers, employees, and prospects could ask questions,
+  report problems, share ideas, and offer praise in public topic threads. Founded in 2007,
+  it popularized the customer-powered support community model and offered widgets, community
+  moderation, and integrations that companies embedded on their websites and product pages.
+  Get Satisfaction was acquired by the social customer experience management company Sprinklr
+  in 2015 and folded into Sprinklr's platform; the standalone product and its developer
+  program have since been discontinued. This profile is retained in the API Evangelist network
+  as a historical portfolio-company record (backed by Uncork Capital); it no longer operates a
+  live public API, developer portal, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/get-satisfaction/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +30,33 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: discontinued
+x-acquired-by: sprinklr
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Customer Community
+- Customer Engagement
+- Customer Support
+- Community Platform
+- Social Media
+- SaaS
+- Acquired
+common:
+- type: DomainSecurity
+  url: security/get-satisfaction-domain-security.yml
+- type: Website
+  url: https://getsatisfaction.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
